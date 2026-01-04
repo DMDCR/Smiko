@@ -3,6 +3,8 @@ Smiko - Smite Management by hIjacKing the cr50
 
 ![Smiko Logo](/logo.png)
 
+<sub>(No longer for smiting management)</sub>
+
 ## Overview
 Smiko is a collection of reverse engineered software and tools regarding the Google Security Chip. The tools in this repository are designed to interact with and in some cases exploit Google's lineup of chips to perform custom actions, extract data, and more.
 
