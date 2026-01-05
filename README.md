@@ -63,3 +63,6 @@ More information on the [Code Of Conduct](CODE_OF_CONDUCT.md) and [Security](SEC
 - Writable (unaffiliated): Discovering the exploit that let us dump the H1 BootROM
 - Quarkslab (unaffiliated): Proving the concept possible and introducing us to Citadel and NuggetOS
 - Google (unaffiliated): Developing the GSC and all provided firmware
+
+[Join HavenOverflow](https://discord.gg/BtJ6j2eJrU)
+[Join Crosbreaker](https://discord.crosbreaker.dev)
