@@ -21,7 +21,7 @@ endif # ifeq CROSS_COMPILE,
 
 ### Standard build utilities ###
 MAKE ?= make
-SHELL ?= /bin/sh
+SHELL ?= /bin/bash
 CC := $(CROSS_COMPILE)gcc
 CXX := $(CROSS_COMPILE)g++
 LD := $(CROSS_COMPILE)gcc
