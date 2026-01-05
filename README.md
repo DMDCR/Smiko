@@ -10,6 +10,8 @@ Smiko is a collection of reverse engineered software and tools regarding the Goo
 
 The Google Security Chip (TM) is Google's proprietary off-shelf SoC that runs alongside the main processor in millions of licensed products (primarily Chromebooks, Google Pixel Phones, and Google's physical servers), serving a suite of hardware and software protection mechanisms to enable maximum control of the device on the hardware level whilst also preventing malicious tampering. Smiko aims to open-source this technology for security researchers to be able to understand and work with, and lead to overall improvement of this technology as time advances.
 
+You can see a writeup of Smiko on [the website](https://smiko.havenoverflow.dev).
+
 ## Utilities Usage
 There are many ways by which Smiko (and all software contained in this repo) can be utilized, of which here are the most straight-forward:
 - [RMA Shim](/docs/rma_shim.md) (Safest, Recommended): Use Smiko or RMASmoke using the TPM link existing on a modified RMA shim running in recovery mode.
