@@ -45,6 +45,7 @@ const struct cmd_line_args args[] = {
 	{'r', "rescue", NULL,  "Perform a GSC rescue operation", ARG_BOOLEAN},
 	{'b', "bootstrap", NULL, "Perform a GSC bootstrap operation", ARG_BOOLEAN},
 	{'e', "extortion", NULL, "Rescue to CFW (Cr50 RO <= 0.0.10 rescue ONLY!)", ARG_BOOLEAN},
+	{'b', "bootcon", NULL, "BootCon to CFW (Cr50 RW <= 0.0.6 ONLY!)", ARG_BOOLEAN},
 };
 
 int fbool(char *arg)

@@ -36,6 +36,7 @@
 #include <unistd.h>
 
 #include "args.h"
+#include "bootcon.h"
 #include "chip_config.h"
 #include "endorsement.h"
 #include "header.h"
@@ -119,6 +120,11 @@ int main(int argc, char **argv)
 	if (getuid() != 0) {
 		fprintf(stderr, "Error: Please run Shaft as root.\n");
 		return 1;
+	}
+
+	if (fbool("bootcon")) {
+		send_bootcon();
+		return 0;
 	}
 
 	if (fbool("rescue")) {

@@ -15,6 +15,7 @@ LDFLAGS += $(LIBCRYPTO) $(LIBFTDI) $(LIBUSB)
 
 PROGS:= $(BDIR)/shaft
 SRCS  = $(BDIR)/args.o
+SRCS += $(BDIR)/bootcon.o
 SRCS += $(BDIR)/endorsement.o
 SRCS += $(BDIR)/header.o
 SRCS += $(BDIR)/mpsse.o

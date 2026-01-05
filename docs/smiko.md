@@ -39,6 +39,7 @@ rw 0x40091024 0x0
 
 rw 0x44404
 ```
+(you can also run `sudo shaft --socket /dev/ttyUSB0 --bootcon` where /dev/ttyUSB0 points to the CCD console to automate these commands)
 
 This will unlock the GLOBALSEC execution on REGION2, and the last `rw` command will output an address. Copy it, and finally, run the following, with the address in place of "[addr]":
 ```
