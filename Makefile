@@ -139,7 +139,7 @@ src/cr50/build/smiko/RW/ec.RW.flat:
 	$(Q)BRANCH=TOT BOARD=smiko $(MAKE) -C src/cr50 --no-print-directory
 
 $(BDIR)/firmware/smiko-bootcon-cfw.bin: src/cr50/build/smiko/RW/ec.RW.flat
-	/bin/bash util/packer.sh $@ \
+	$(Q)bash util/packer.sh $@ \
 		src/cr50/prebuilts/node_locked_images/cr50.prod.test.ro.A.0.0.11.bin \
 		src/cr50/build/smiko/RW/ec.RW.flat \
 		test/carver/extracted/cr50-0-0-9.ro.b.flat \
@@ -148,7 +148,7 @@ $(BDIR)/firmware/smiko-bootcon-cfw.bin: src/cr50/build/smiko/RW/ec.RW.flat
 
 $(BDIR)/firmware/smiko-update-cfw.bin: src/cr50/build/smiko/RW/ec.RW.flat
 	$(Q)BRANCH=TOT BOARD=smiko $(MAKE) -C src/cr50 --no-print-directory
-	$(Q)$(SHELL) util/packer.sh $@ \
+	$(Q)bash util/packer.sh $@ \
 		test/carver/extracted/cr50-0-0-9.ro.a.flat \
 		src/cr50/build/smiko/RW/ec.RW.flat \
 		test/carver/extracted/cr50-0-0-9.ro.b.flat \
